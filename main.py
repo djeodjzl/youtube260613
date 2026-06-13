@@ -118,7 +118,6 @@ except Exception as e:
     st.error("API 호출 실패 😢")
     st.exception(e)
     st.stop()
-
         for item in response["items"]:
 
             snippet = item["snippet"]["topLevelComment"]["snippet"]
