@@ -224,9 +224,8 @@ def get_comments(api_key, video_id):
             textFormat="plainText"
         )
 
-       try:
+      try:
     response = request.execute()
-
 except Exception as e:
     st.error("API 호출 실패 😢")
     st.exception(e)
