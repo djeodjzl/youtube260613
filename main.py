@@ -111,7 +111,7 @@ def get_comments(api_key, video_id):
             textFormat="plainText"
         )
 
-        response = request.execute()
+        st.exception(e)
 
         for item in response["items"]:
 
